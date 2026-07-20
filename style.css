@@ -1,1 +1,21 @@
+button{
+    animation: glow 2s infinite;
+}
+
+@keyframes glow{
+
+0%{
+box-shadow:0 0 10px #ff4d88;
+}
+
+50%{
+box-shadow:0 0 30px #ff4d88,
+0 0 60px #ff4d88;
+}
+
+100%{
+box-shadow:0 0 10px #ff4d88;
+}
+
+}
 
