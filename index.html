@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>❤️ Our Story ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(135deg,#ffd6e8,#ffeef6,#fff8fb);
+
+overflow-x:hidden;
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:25px;
+
+animation:float 10s linear infinite;
+
+opacity:.5;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+}
+
+}
+
+/* Welcome */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+color:#ff3b7d;
+
+animation:fade 2s;
+
+}
+
+.hero p{
+
+margin-top:20px;
+
+font-size:22px;
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+button{
+
+margin-top:40px;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4d88;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+box-shadow:0 0 25px #ff77aa;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart" style="left:5%">❤️</div>
+<div class="heart" style="left:18%;animation-delay:2s;">💖</div>
+<div class="heart" style="left:35%;animation-delay:5s;">💕</div>
+<div class="heart" style="left:55%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:75%;animation-delay:4s;">💗</div>
+<div class="heart" style="left:90%;animation-delay:7s;">💞</div>
+
+<section class="hero">
+
+<h1>❤️ Our Story ❤️</h1>
+
+<p>
+
+A journey that started unexpectedly...<br>
+
+and became the most beautiful part of my life.
+
+</p>
+
+<button onclick="document.getElementById('chapter1').scrollIntoView({behavior:'smooth'})">
+
+❤️ Begin Our Journey ❤️
+
+</button>
+
+</section>
+
+<section id="chapter1">
+
+</section>
+
+</body>
+
+</html>
