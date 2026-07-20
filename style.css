@@ -42,3 +42,18 @@ box-shadow:0 0 10px #ff4d88;
         opacity:1;
     }
 }
+#musicBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    z-index:1000;
+    box-shadow:0 0 20px #ff4d88;
+}
